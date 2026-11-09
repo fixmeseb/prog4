@@ -476,7 +476,7 @@ function loadModels() {
 function setupShaders() {
     
     // define vertex shader in essl using es6 template strings
-    var vShaderCode = `
+    var vShaderCode = /*glsl*/ `
         attribute vec3 aVertexPosition; // vertex position
         attribute vec3 aVertexNormal; // vertex normal
         
@@ -500,7 +500,7 @@ function setupShaders() {
     `;
     
     // define fragment shader in essl using es6 template strings
-    var fShaderCode = `
+    var fShaderCode = /*glsl*/ `
         precision mediump float; // set float to medium precision
 
         // eye location
