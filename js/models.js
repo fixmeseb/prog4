@@ -177,6 +177,8 @@ function loadModels() {
 
                     // make the ellipsoid model
                     ellipsoidModel = makeEllipsoid(ellipsoid,32);
+                    ellipsoid.glVertices = ellipsoidModel.vertices; // keep the flat coord and index lists,
+                    ellipsoid.glTriangles = ellipsoidModel.triangles; // as tri sets do, for depth sorting
     
                     // send the ellipsoid vertex coords and normals to webGL
                     vertexBuffers.push(gl.createBuffer()); // init empty webgl ellipsoid vertex coord buffer

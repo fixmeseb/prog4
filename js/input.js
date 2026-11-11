@@ -182,6 +182,8 @@ function setupControls() {
     bindCheckbox("showEllipsoids",function(on) { showEllipsoids = on; });
     bindCheckbox("showExtraTriangles",function(on) { showExtraTriangles = on; });
     bindCheckbox("showLightMapTriangle",function(on) { showLightMapTriangle = on; });
+    bindCheckbox("showPainterTriangles",function(on) { showPainterTriangles = on; });
+    bindCheckbox("usePainters",function(on) { usePainters = on; });
     bindCheckbox("useLightMapping",function(on) { useLightMapping = on; });
     bindCheckbox("useLighting",function(on) { useLighting = on; });
     bindCheckbox("showTexture",function(on) { showTexture = on; });
