@@ -7,11 +7,39 @@
     <link type="text/css" rel="stylesheet" href="rasterize.css">
 
     <script type="text/javascript" src="gl-matrix.js"></script>
-    <script type="text/javascript" src="rasterize.js"></script>
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/state.js"></script>
+    <script type="text/javascript" src="js/util.js"></script>
+    <script type="text/javascript" src="shaders/phong.vert.js"></script>
+    <script type="text/javascript" src="shaders/phong.frag.js"></script>
+    <script type="text/javascript" src="js/geometry.js"></script>
+    <script type="text/javascript" src="js/models.js"></script>
+    <script type="text/javascript" src="js/shaders.js"></script>
+    <script type="text/javascript" src="js/input.js"></script>
+    <script type="text/javascript" src="js/render.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </head>
 
   <body onload="main();">
     <canvas id="myImageCanvas" width="512" height="512"></canvas>
-    <canvas id="myWebGLCanvas" width="512" height="512"></canvas> 
+    <canvas id="myWebGLCanvas" width="512" height="512"></canvas>
+    <div id="controls">
+      <label><input type="checkbox" id="showTriangles" checked> Triangles</label>
+      <label><input type="checkbox" id="showEllipsoids" checked> Ellipsoids</label>
+      <label><input type="checkbox" id="showExtraTriangles" checked> Extra triangles</label>
+      <label><input type="checkbox" id="showLightMapTriangle" checked> Light map triangle</label>
+      <label><input type="checkbox" id="useLighting" checked> Lighting</label>
+      <label>Blend
+        <select id="blendMode">
+          <option value="0" selected>Modulate</option>
+          <option value="1">Replace</option>
+          <option value="2">Modulate + specular</option>
+        </select>
+      </label>
+      <label><input type="checkbox" id="showTexture" checked> Textures</label>
+      <label><input type="checkbox" id="useMaterialAlpha" checked> Material alpha</label>
+      <label><input type="checkbox" id="useTextureAlpha" checked> Texture alpha</label>
+      <label><input type="checkbox" id="useLightMapping" checked> Light mapping</label>
+    </div>
   </body>
 </html>

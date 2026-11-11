@@ -1,0 +1,15 @@
+{
+    // Press F5 (or Run > Start Debugging) to open index.html with the debugger attached.
+    // Breakpoints in js/*.js work; console output appears in the Debug Console.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // Requires the "Debugger for Firefox" extension (firefox-devtools.vscode-firefox-debug)
+            "name": "Launch page (Firefox)",
+            "type": "firefox",
+            "request": "launch",
+            "file": "${workspaceFolder}/index.html",
+            "reAttach": true
+        }
+    ]
+}

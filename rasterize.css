@@ -11,3 +11,17 @@
     top: 0px;
     z-index: 0;
 }
+
+#controls {
+    position: absolute;
+    left: 528px; /* just right of the 512px canvases */
+    top: 8px;
+    font-family: sans-serif;
+}
+
+#controls label {
+    display: block; /* one control per line */
+    margin-bottom: 8px;
+    white-space: nowrap;
+    cursor: pointer;
+}
